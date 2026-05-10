@@ -1,0 +1,26 @@
+name: Alur Kerja Berita Sederhana
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  pemeriksaan_kode:
+    name: Validasi Proyek Berita
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Kode
+        uses: actions/checkout@v3
+
+      - name: Periksa Struktur Folder
+        run: |
+          echo "Memulai pemeriksaan file proyek berita..."
+          [ -f index.html ] && echo "Berhasil: index.html ditemukan."
+          [ -f kategori.html ] && echo "Berhasil: kategori.html ditemukan."
+          [ -f kontak.html ] && echo "Berhasil: kontak.html ditemukan."
+          [ -f style.css ] && echo "Berhasil: style.css ditemukan."
+
+      - name: Selesai
+        run: echo "Validasi selesai! Website berita siap untuk tahap publikasi."
