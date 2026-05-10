@@ -9,23 +9,49 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Smooth reveal for news cards
-    const cards = document.querySelectorAll('.news-card');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+    // Search Functionality
+    const searchInput = document.getElementById('searchInput');
+    const newsGrid = document.querySelector('.news-grid');
+    
+    if (searchInput && newsGrid) {
+        searchInput.addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase();
+            const cards = newsGrid.querySelectorAll('.news-card');
+            let foundCount = 0;
+
+            cards.forEach(card => {
+                const title = card.querySelector('.card-title')?.innerText.toLowerCase() || '';
+                const content = card.querySelector('p')?.innerText.toLowerCase() || '';
+                const category = card.querySelector('.card-category')?.innerText.toLowerCase() || '';
+
+                if (title.includes(term) || content.includes(term) || category.includes(term)) {
+                    card.style.display = 'block';
+                    foundCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Handle No Results
+            let noResultsMsg = document.getElementById('noResultsMsg');
+            if (foundCount === 0) {
+                if (!noResultsMsg) {
+                    noResultsMsg = document.createElement('div');
+                    noResultsMsg.id = 'noResultsMsg';
+                    noResultsMsg.style.textAlign = 'center';
+                    noResultsMsg.style.padding = '3rem';
+                    noResultsMsg.style.gridColumn = '1 / -1';
+                    noResultsMsg.innerHTML = `
+                        <h3 style="color: var(--text-dark);">Berita tidak ditemukan</h3>
+                        <p style="color: var(--text-light);">Coba kata kunci lain atau cek ejaan kamu.</p>
+                    `;
+                    newsGrid.appendChild(noResultsMsg);
+                }
+            } else {
+                if (noResultsMsg) noResultsMsg.remove();
             }
         });
-    }, { threshold: 0.1 });
-
-    cards.forEach(card => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(20px)';
-        card.style.transition = 'all 0.5s ease-out';
-        observer.observe(card);
-    });
+    }
 });
 
 console.log('Portal Berita KilasInfo Aktif.');
