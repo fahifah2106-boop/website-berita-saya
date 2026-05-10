@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            alert('Terima kasih! Pesan Anda telah terkirim ke Redaksi WartaNasional.');
+            alert('Terima kasih! Pesan Anda telah terkirim ke Redaksi KilasInfo.');
             contactForm.reset();
         });
     }
@@ -28,4 +28,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-console.log('Portal Berita WartaNasional Aktif.');
+console.log('Portal Berita KilasInfo Aktif.');
