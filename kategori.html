@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kategori Berita - WartaNasional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container header-flex">
+        <div class="top-bar">
+            <div class="container">
+                Minggu, 10 Mei 2026 | Edisi Digital Nasional
+            </div>
+        </div>
+        <div class="container header-main">
             <a href="index.html" class="logo">Warta<span>Nasional</span></a>
             <nav>
                 <ul>
@@ -22,63 +30,68 @@
 
     <main class="container">
         <section class="news-section">
-            <h1 class="section-title">Kategori Berita</h1>
+            <h1 class="sidebar-title" style="font-size: 2rem; margin-top: 2rem;">Kategori Berita Utama</h1>
+            <p style="color: var(--text-light); margin-bottom: 3rem;">Pilih kanal berita untuk mengeksplorasi informasi lebih mendalam.</p>
+            
             <div class="news-grid">
                 <!-- Politik -->
-                <div class="news-card">
+                <article class="news-card">
                     <div style="position: relative; height: 180px;">
                         <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&q=80&w=800" alt="Politik" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; background: rgba(0,0,0,0.2);">⚖️</div>
+                        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; background: rgba(0,0,0,0.3); backdrop-filter: blur(2px);">⚖️</div>
                     </div>
                     <div class="card-content">
-                        <h2 class="card-title">Politik</h2>
-                        <p style="color: var(--text-light); margin-bottom: 1rem;">Berita terkini seputar pemerintahan, kebijakan publik, dan diplomasi internasional.</p>
-                        <a href="#" class="btn-link" style="color: var(--primary); font-weight: 700; text-decoration: none;">Eksplorasi Politik &rarr;</a>
+                        <h2 class="card-title">Politik & Hukum</h2>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">Kebijakan publik, diplomasi, dan penegakan hukum nasional.</p>
+                        <a href="#" style="color: var(--primary); font-weight: 800; text-decoration: none; font-size: 0.85rem;">LIHAT SEMUA BERITA →</a>
                     </div>
-                </div>
+                </article>
+
                 <!-- Ekonomi -->
-                <div class="news-card">
+                <article class="news-card">
                     <div style="position: relative; height: 180px;">
                         <img src="https://images.unsplash.com/photo-1611974717535-7c857a1ed30d?auto=format&fit=crop&q=80&w=800" alt="Ekonomi" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; background: rgba(0,0,0,0.2);">📈</div>
+                        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; background: rgba(0,0,0,0.3); backdrop-filter: blur(2px);">📈</div>
                     </div>
                     <div class="card-content">
-                        <h2 class="card-title">Ekonomi</h2>
-                        <p style="color: var(--text-light); margin-bottom: 1rem;">Update pasar modal, bisnis, industri, dan tips keuangan pribadi.</p>
-                        <a href="#" class="btn-link" style="color: var(--primary); font-weight: 700; text-decoration: none;">Eksplorasi Ekonomi &rarr;</a>
+                        <h2 class="card-title">Ekonomi & Bisnis</h2>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">Update pasar saham, industri, dan tips investasi cerdas.</p>
+                        <a href="#" style="color: var(--primary); font-weight: 800; text-decoration: none; font-size: 0.85rem;">LIHAT SEMUA BERITA →</a>
                     </div>
-                </div>
+                </article>
+
                 <!-- Teknologi -->
-                <div class="news-card">
+                <article class="news-card">
                     <div style="position: relative; height: 180px;">
                         <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=800" alt="Teknologi" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; background: rgba(0,0,0,0.2);">🚀</div>
+                        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; background: rgba(0,0,0,0.3); backdrop-filter: blur(2px);">🚀</div>
                     </div>
                     <div class="card-content">
-                        <h2 class="card-title">Teknologi</h2>
-                        <p style="color: var(--text-light); margin-bottom: 1rem;">Gadget terbaru, inovasi digital, sains, dan perkembangan dunia startup.</p>
-                        <a href="#" class="btn-link" style="color: var(--primary); font-weight: 700; text-decoration: none;">Eksplorasi Teknologi &rarr;</a>
+                        <h2 class="card-title">Sains & Teknologi</h2>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">Inovasi terbaru, gadget, dan masa depan dunia digital.</p>
+                        <a href="#" style="color: var(--primary); font-weight: 800; text-decoration: none; font-size: 0.85rem;">LIHAT SEMUA BERITA →</a>
                     </div>
-                </div>
+                </article>
+
                 <!-- Olahraga -->
-                <div class="news-card">
+                <article class="news-card">
                     <div style="position: relative; height: 180px;">
                         <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=800" alt="Olahraga" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; background: rgba(0,0,0,0.2);">⚽</div>
+                        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; background: rgba(0,0,0,0.3); backdrop-filter: blur(2px);">⚽</div>
                     </div>
                     <div class="card-content">
-                        <h2 class="card-title">Olahraga</h2>
-                        <p style="color: var(--text-light); margin-bottom: 1rem;">Skor pertandingan, profil atlet, dan jadwal turnamen olahraga nasional.</p>
-                        <a href="#" class="btn-link" style="color: var(--primary); font-weight: 700; text-decoration: none;">Eksplorasi Olahraga &rarr;</a>
+                        <h2 class="card-title">Olahraga Nasional</h2>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">Skor pertandingan, profil atlet, dan jadwal turnamen.</p>
+                        <a href="#" style="color: var(--primary); font-weight: 800; text-decoration: none; font-size: 0.85rem;">LIHAT SEMUA BERITA →</a>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container" style="text-align: center; color: #94a3b8;">
-            &copy; 2026 WartaNasional. Portal Informasi Terpercaya.
+        <div class="container" style="text-align: center; color: #94a3b8; font-size: 0.9rem;">
+            &copy; 2026 WartaNasional. Portal Informasi Terpercaya & Terlengkap.
         </div>
     </footer>
 

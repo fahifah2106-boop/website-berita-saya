@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WartaNasional - Portal Berita Terpercaya</title>
+    <title>WartaNasional - Portal Berita Terpercaya & Terlengkap</title>
     <meta name="description" content="Pusat berita terkini, tajam, dan terpercaya mengenai Politik, Ekonomi, Teknologi, dan Olahraga.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container header-flex">
+        <div class="top-bar">
+            <div class="container">
+                Minggu, 10 Mei 2026 | Edisi Digital Nasional
+            </div>
+        </div>
+        <div class="container header-main">
             <a href="index.html" class="logo">Warta<span>Nasional</span></a>
             <nav>
                 <ul>
@@ -21,96 +29,148 @@
         </div>
     </header>
 
-    <main class="container">
-        <!-- Berita Utama -->
-        <section class="featured">
-            <div class="featured-grid">
-                <div class="main-news">
-                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200" alt="Berita Utama" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div class="news-overlay">
-                        <span class="card-category" style="color: #fbbf24;">Utama</span>
-                        <h2>Langkah Strategis Ekonomi Digital Indonesia 2026</h2>
-                        <p>Pemerintah meluncurkan inisiatif baru untuk mempercepat pertumbuhan startup di seluruh penjuru negeri.</p>
-                        <span class="card-meta">Oleh Redaksi | 10 Mei 2026</span>
-                    </div>
-                </div>
-                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-                    <div class="news-card">
-                        <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=800" alt="Teknologi" style="width: 100%; height: 120px; object-fit: cover;">
-                        <div class="card-content" style="padding: 1rem;">
-                            <span class="card-category">Teknologi</span>
-                            <a href="#" class="card-title" style="font-size: 1rem;">Evolusi AI dalam Kehidupan Sehari-hari</a>
-                        </div>
-                    </div>
-                    <div class="news-card">
-                        <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=800" alt="Olahraga" style="width: 100%; height: 120px; object-fit: cover;">
-                        <div class="card-content" style="padding: 1rem;">
-                            <span class="card-category">Olahraga</span>
-                            <a href="#" class="card-title" style="font-size: 1rem;">Persiapan Tim Nasional Jelang Kualifikasi</a>
-                        </div>
-                    </div>
-                </div>
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news">
+        <div class="container ticker-wrapper">
+            <div class="ticker-label">Breaking News</div>
+            <div class="ticker-text">
+                • IHSG Menguat Signifikan di Awal Pekan • Tim Nasional Indonesia Siap Berlaga di Kualifikasi Global • Perkembangan AI Terbaru Mengubah Sektor Industri Kreatif • Pemerintah Luncurkan Program Ekonomi Digital 2026 • 
             </div>
-        </section>
+        </div>
+    </div>
 
-        <!-- Berita Terbaru -->
-        <section class="news-section">
-            <h2 class="section-title">Berita Terbaru</h2>
-            <div class="news-grid">
-                <!-- Card 1 -->
-                <article class="news-card">
-                    <img src="https://images.unsplash.com/photo-1611974717535-7c857a1ed30d?auto=format&fit=crop&q=80&w=800" alt="Ekonomi" style="width: 100%; height: 180px; object-fit: cover;">
-                    <div class="card-content">
-                        <span class="card-category">Ekonomi</span>
-                        <a href="#" class="card-title">IHSG Menguat di Awal Pekan, Investor Optimis</a>
-                        <p class="card-meta">10 Mei 2026 • 2 Menit Baca</p>
+    <main class="container">
+        <div class="main-layout">
+            <!-- Kolom Utama (Kiri) -->
+            <div class="content-area">
+                <!-- Berita Utama -->
+                <section class="featured-main">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200" alt="Berita Utama">
+                    <div class="news-overlay">
+                        <span class="badge">Eksklusif</span>
+                        <h2>Langkah Strategis Ekonomi Digital Indonesia 2026: Menuju Pusat Startup Asia</h2>
+                        <p>Pemerintah meluncurkan inisiatif baru untuk mempercepat pertumbuhan startup teknologi di seluruh penjuru negeri dengan dukungan infrastruktur digital yang masif.</p>
+                        <div style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.8;">Oleh Redaksi Utama | 5 Menit Baca</div>
                     </div>
-                </article>
-                <!-- Card 2 -->
-                <article class="news-card">
-                    <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&q=80&w=800" alt="Internasional" style="width: 100%; height: 180px; object-fit: cover;">
-                    <div class="card-content">
-                        <span class="card-category">Internasional</span>
-                        <a href="#" class="card-title">Perjanjian Iklim Global Masuki Babak Baru</a>
-                        <p class="card-meta">09 Mei 2026 • 5 Menit Baca</p>
-                    </div>
-                </article>
-                <!-- Card 3 -->
-                <article class="news-card">
-                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=800" alt="Hiburan" style="width: 100%; height: 180px; object-fit: cover;">
-                    <div class="card-content">
-                        <span class="card-category">Hiburan</span>
-                        <a href="#" class="card-title">Festival Film Nasional Kembali Digelar Megah</a>
-                        <p class="card-meta">09 Mei 2026 • 3 Menit Baca</p>
-                    </div>
-                </article>
+                </section>
+
+                <h2 class="sidebar-title">Berita Terbaru</h2>
+                <div class="news-grid">
+                    <!-- Card 1 -->
+                    <article class="news-card">
+                        <img src="https://images.unsplash.com/photo-1611974717535-7c857a1ed30d?auto=format&fit=crop&q=80&w=800" alt="Ekonomi" style="width: 100%; height: 180px; object-fit: cover;">
+                        <div class="card-content">
+                            <span class="card-category" style="color: var(--secondary); font-weight: 800; font-size: 0.7rem; text-transform: uppercase;">Ekonomi</span>
+                            <a href="#" class="card-title">IHSG Menguat di Awal Pekan, Investor Optimis Terhadap Pasar Modal</a>
+                            <div class="card-footer">
+                                <span>Redaksi</span>
+                                <span>10 Mei 2026</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Card 2 -->
+                    <article class="news-card">
+                        <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=800" alt="Teknologi" style="width: 100%; height: 180px; object-fit: cover;">
+                        <div class="card-content">
+                            <span class="card-category" style="color: var(--primary); font-weight: 800; font-size: 0.7rem; text-transform: uppercase;">Teknologi</span>
+                            <a href="#" class="card-title">Evolusi AI dalam Kehidupan Sehari-hari: Dari Asisten Virtual Hingga Otomasi</a>
+                            <div class="card-footer">
+                                <span>Tekno Desk</span>
+                                <span>10 Mei 2026</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Card 3 -->
+                    <article class="news-card">
+                        <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=800" alt="Olahraga" style="width: 100%; height: 180px; object-fit: cover;">
+                        <div class="card-content">
+                            <span class="card-category" style="color: #10b981; font-weight: 800; font-size: 0.7rem; text-transform: uppercase;">Olahraga</span>
+                            <a href="#" class="card-title">Persiapan Tim Nasional Jelang Kualifikasi: Fokus Pada Fisik dan Strategi</a>
+                            <div class="card-footer">
+                                <span>Sport Desk</span>
+                                <span>09 Mei 2026</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
-        </section>
+
+            <!-- Sidebar (Kanan) -->
+            <aside class="sidebar">
+                <h3 class="sidebar-title">Terpopuler <span>#Trending</span></h3>
+                
+                <div class="trending-item">
+                    <div class="trending-num">01</div>
+                    <div class="trending-content">
+                        <h4>Kebijakan Baru Transportasi Publik Jakarta</h4>
+                        <p style="font-size: 0.75rem; color: var(--text-light);">200rb+ Pembaca</p>
+                    </div>
+                </div>
+
+                <div class="trending-item">
+                    <div class="trending-num">02</div>
+                    <div class="trending-content">
+                        <h4>Prediksi Cuaca Ekstrem Pekan Depan</h4>
+                        <p style="font-size: 0.75rem; color: var(--text-light);">150rb+ Pembaca</p>
+                    </div>
+                </div>
+
+                <div class="trending-item">
+                    <div class="trending-num">03</div>
+                    <div class="trending-content">
+                        <h4>Review Gadget Terbaru Tahun 2026</h4>
+                        <p style="font-size: 0.75rem; color: var(--text-light);">98rb+ Pembaca</p>
+                    </div>
+                </div>
+
+                <!-- Newsletter Box -->
+                <div style="background: var(--primary); padding: 1.5rem; border-radius: 12px; color: white; margin-top: 2rem;">
+                    <h4 style="margin-bottom: 0.5rem;">Langganan Berita</h4>
+                    <p style="font-size: 0.8rem; margin-bottom: 1rem; opacity: 0.8;">Dapatkan berita pilihan langsung di email kamu setiap pagi.</p>
+                    <input type="email" placeholder="Email kamu..." style="width: 100%; padding: 0.6rem; border-radius: 4px; border: none; margin-bottom: 0.5rem;">
+                    <button style="width: 100%; padding: 0.6rem; background: var(--accent); border: none; border-radius: 4px; font-weight: 800; cursor: pointer;">Daftar Sekarang</button>
+                </div>
+            </aside>
+        </div>
     </main>
 
     <footer>
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <a href="#" class="logo" style="color: white; margin-bottom: 1.5rem; display: block;">Warta<span>Nasional</span></a>
-                    <p style="color: #94a3b8;">Portal berita independen yang menyajikan informasi tercepat dan terakurat dari seluruh pelosok negeri.</p>
+                    <a href="#" class="footer-logo">Warta<span>Nasional</span></a>
+                    <p style="color: #94a3b8; font-size: 0.9rem;">Portal berita independen yang menyajikan informasi tercepat, tajam, dan terakurat dari seluruh pelosok negeri Indonesia.</p>
                 </div>
-                <div>
-                    <h3>Kategori</h3>
-                    <ul style="list-style: none; margin-top: 1rem;">
-                        <li><a href="#" style="color: #94a3b8; text-decoration: none;">Politik</a></li>
-                        <li><a href="#" style="color: #94a3b8; text-decoration: none;">Ekonomi</a></li>
-                        <li><a href="#" style="color: #94a3b8; text-decoration: none;">Teknologi</a></li>
+                <div class="footer-links">
+                    <h4>Kanal Berita</h4>
+                    <ul>
+                        <li><a href="#">Nasional</a></li>
+                        <li><a href="#">Internasional</a></li>
+                        <li><a href="#">Ekonomi</a></li>
+                        <li><a href="#">Teknologi</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h3>Redaksi</h3>
-                    <p style="color: #94a3b8; margin-top: 1rem;">Jl. Jurnalis No. 12, Jakarta Pusat</p>
-                    <p style="color: #94a3b8;">Email: redaksi@wartanasional.com</p>
+                <div class="footer-links">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="kontak.html">Tentang Kami</a></li>
+                        <li><a href="#">Redaksi</a></li>
+                        <li><a href="#">Pedoman Media</a></li>
+                        <li><a href="#">Karier</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Ikuti Kami</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">X (Twitter)</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 WartaNasional. Semua Hak Dilindungi.</p>
+                <p>&copy; 2026 WartaNasional Media Group. Hak Cipta Dilindungi Undang-Undang.</p>
             </div>
         </div>
     </footer>
